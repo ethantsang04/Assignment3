@@ -1,0 +1,63 @@
+body{
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+	overflow: hidden;
+	background-color: #DDDDDD;
+	list-style: none;
+	margin-top: 0px;
+}
+
+.navbar li{
+	display: inline-block;
+	float: left;
+}
+
+.navbar li a{
+	color: #303030;
+	text-decoration: none;
+	padding: 5px 20px;
+	text-align: center;
+	font-size: 19px;
+}
+
+.navbar li.active a{
+	background-color: #FF9E00;
+	color: white;
+}
+
+.navbar .signup a{
+	float: right;
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	padding-right: 5px 20px;
+	font-size: 19px;
+	margin-right: 16px;
+	color: #303030;
+}
+
+.navbar .search-bar{
+	float: right;
+}
+
+.navbar input[type=text]{
+	padding: 6px;
+	margin-top: 0px;
+	font-size: 17px;
+	border: none;
+}
+
+.navbar .search-bar button{
+	float: right;
+	padding: 6px 10px;
+	margin-top: 0px;
+	margin-right: 8px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
