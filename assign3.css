@@ -8,6 +8,7 @@ body{
 	background-color: #DDDDDD;
 	list-style: none;
 	margin-top: 0px;
+	position: static;
 }
 
 .navbar li{
@@ -19,7 +20,7 @@ body{
 	color: #303030;
 	text-decoration: none;
 	padding: 5px 20px;
-	text-align: center;
+	text-align: bottom;
 	font-size: 19px;
 }
 
@@ -40,6 +41,19 @@ body{
 	color: #303030;
 }
 
+.navbar .ingredients-search a{
+	float: right;
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	padding-right: 5px 20px;
+	font-size: 17px;
+	margin-top: 4px;
+	margin-right: 16px;
+	color: #303030;
+}
+
 .navbar .search-bar{
 	float: right;
 }
@@ -49,6 +63,7 @@ body{
 	margin-top: 0px;
 	font-size: 17px;
 	border: none;
+	width: 350px;
 }
 
 .navbar .search-bar button{
@@ -60,4 +75,109 @@ body{
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  max-height: 40px%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    margin-left: 8px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card .column1{
+	padding: 2px 16px;
 }
